@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75C3E77A21AA5E9800876EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E77921AA5E9800876EC6 /* AppDelegate.swift */; };
+		75C3E77C21AA5E9800876EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E77B21AA5E9800876EC6 /* ViewController.swift */; };
+		75C3E77F21AA5E9800876EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C3E77D21AA5E9800876EC6 /* Main.storyboard */; };
+		75C3E78221AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E78021AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodeld */; };
+		75C3E78421AA5E9800876EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C3E78321AA5E9800876EC6 /* Assets.xcassets */; };
+		75C3E78721AA5E9800876EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C3E78521AA5E9800876EC6 /* LaunchScreen.storyboard */; };
+		75C3E79221AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E79121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.swift */; };
+		75C3E79D21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E79C21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.swift */; };
+		75C3E7AB21AA5F3300876EC6 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75C3E7AA21AA5F3300876EC6 /* Keys.plist */; };
+		75C3E7AD21AA62E900876EC6 /* CheckVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E7AC21AA62E900876EC6 /* CheckVerificationViewController.swift */; };
+		75C3E7AF21AA630100876EC6 /* VerificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E7AE21AA630100876EC6 /* VerificationResultViewController.swift */; };
+		75C3E7B421AA63A500876EC6 /* verifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E7B321AA63A500876EC6 /* verifyAPI.swift */; };
+		75C3E7B621AA65C100876EC6 /* StartVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3E7B521AA65C100876EC6 /* StartVerificationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75C3E78E21AA5E9800876EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C3E76E21AA5E9800876EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C3E77521AA5E9800876EC6;
+			remoteInfo = Twilio_App_SMS_VERIFICATION;
+		};
+		75C3E79921AA5E9900876EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C3E76E21AA5E9800876EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C3E77521AA5E9800876EC6;
+			remoteInfo = Twilio_App_SMS_VERIFICATION;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75C3E77621AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twilio_App_SMS_VERIFICATION.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C3E77921AA5E9800876EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75C3E77B21AA5E9800876EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75C3E77E21AA5E9800876EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75C3E78121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Twilio_App_SMS_VERIFICATION.xcdatamodel; sourceTree = "<group>"; };
+		75C3E78321AA5E9800876EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C3E78621AA5E9800876EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75C3E78821AA5E9800876EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C3E78D21AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Twilio_App_SMS_VERIFICATIONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C3E79121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twilio_App_SMS_VERIFICATIONTests.swift; sourceTree = "<group>"; };
+		75C3E79321AA5E9800876EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C3E79821AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Twilio_App_SMS_VERIFICATIONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C3E79C21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twilio_App_SMS_VERIFICATIONUITests.swift; sourceTree = "<group>"; };
+		75C3E79E21AA5E9900876EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C3E7AA21AA5F3300876EC6 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		75C3E7AC21AA62E900876EC6 /* CheckVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVerificationViewController.swift; sourceTree = "<group>"; };
+		75C3E7AE21AA630100876EC6 /* VerificationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationResultViewController.swift; sourceTree = "<group>"; };
+		75C3E7B321AA63A500876EC6 /* verifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyAPI.swift; sourceTree = "<group>"; };
+		75C3E7B521AA65C100876EC6 /* StartVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVerificationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75C3E77321AA5E9800876EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E78A21AA5E9800876EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E79521AA5E9900876EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75C3E76D21AA5E9800876EC6 = {
+			isa = PBXGroup;
+			children = (
+				75C3E77821AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */,
+				75C3E79021AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests */,
+				75C3E79B21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests */,
+				75C3E77721AA5E9800876EC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75C3E77721AA5E9800876EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C3E77621AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.app */,
+				75C3E78D21AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.xctest */,
+				75C3E79821AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75C3E77821AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */ = {
+			isa = PBXGroup;
+			children = (
+				75C3E7AA21AA5F3300876EC6 /* Keys.plist */,
+				75C3E77921AA5E9800876EC6 /* AppDelegate.swift */,
+				75C3E77B21AA5E9800876EC6 /* ViewController.swift */,
+				75C3E77D21AA5E9800876EC6 /* Main.storyboard */,
+				75C3E78321AA5E9800876EC6 /* Assets.xcassets */,
+				75C3E78521AA5E9800876EC6 /* LaunchScreen.storyboard */,
+				75C3E78821AA5E9800876EC6 /* Info.plist */,
+				75C3E78021AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodeld */,
+				75C3E7B221AA635500876EC6 /* SwiftFiles */,
+			);
+			path = Twilio_App_SMS_VERIFICATION;
+			sourceTree = "<group>";
+		};
+		75C3E79021AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests */ = {
+			isa = PBXGroup;
+			children = (
+				75C3E79121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.swift */,
+				75C3E79321AA5E9800876EC6 /* Info.plist */,
+			);
+			path = Twilio_App_SMS_VERIFICATIONTests;
+			sourceTree = "<group>";
+		};
+		75C3E79B21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75C3E79C21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.swift */,
+				75C3E79E21AA5E9900876EC6 /* Info.plist */,
+			);
+			path = Twilio_App_SMS_VERIFICATIONUITests;
+			sourceTree = "<group>";
+		};
+		75C3E7B221AA635500876EC6 /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+				75C3E7AC21AA62E900876EC6 /* CheckVerificationViewController.swift */,
+				75C3E7AE21AA630100876EC6 /* VerificationResultViewController.swift */,
+				75C3E7B321AA63A500876EC6 /* verifyAPI.swift */,
+				75C3E7B521AA65C100876EC6 /* StartVerificationViewController.swift */,
+			);
+			path = SwiftFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75C3E77521AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C3E7A121AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATION" */;
+			buildPhases = (
+				75C3E77221AA5E9800876EC6 /* Sources */,
+				75C3E77321AA5E9800876EC6 /* Frameworks */,
+				75C3E77421AA5E9800876EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twilio_App_SMS_VERIFICATION;
+			productName = Twilio_App_SMS_VERIFICATION;
+			productReference = 75C3E77621AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75C3E78C21AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C3E7A421AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATIONTests" */;
+			buildPhases = (
+				75C3E78921AA5E9800876EC6 /* Sources */,
+				75C3E78A21AA5E9800876EC6 /* Frameworks */,
+				75C3E78B21AA5E9800876EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C3E78F21AA5E9800876EC6 /* PBXTargetDependency */,
+			);
+			name = Twilio_App_SMS_VERIFICATIONTests;
+			productName = Twilio_App_SMS_VERIFICATIONTests;
+			productReference = 75C3E78D21AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75C3E79721AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C3E7A721AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATIONUITests" */;
+			buildPhases = (
+				75C3E79421AA5E9900876EC6 /* Sources */,
+				75C3E79521AA5E9900876EC6 /* Frameworks */,
+				75C3E79621AA5E9900876EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C3E79A21AA5E9900876EC6 /* PBXTargetDependency */,
+			);
+			name = Twilio_App_SMS_VERIFICATIONUITests;
+			productName = Twilio_App_SMS_VERIFICATIONUITests;
+			productReference = 75C3E79821AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75C3E76E21AA5E9800876EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "DeEp KapaDia";
+				TargetAttributes = {
+					75C3E77521AA5E9800876EC6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					75C3E78C21AA5E9800876EC6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75C3E77521AA5E9800876EC6;
+					};
+					75C3E79721AA5E9900876EC6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75C3E77521AA5E9800876EC6;
+					};
+				};
+			};
+			buildConfigurationList = 75C3E77121AA5E9800876EC6 /* Build configuration list for PBXProject "Twilio_App_SMS_VERIFICATION" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75C3E76D21AA5E9800876EC6;
+			productRefGroup = 75C3E77721AA5E9800876EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75C3E77521AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */,
+				75C3E78C21AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests */,
+				75C3E79721AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75C3E77421AA5E9800876EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C3E7AB21AA5F3300876EC6 /* Keys.plist in Resources */,
+				75C3E78721AA5E9800876EC6 /* LaunchScreen.storyboard in Resources */,
+				75C3E78421AA5E9800876EC6 /* Assets.xcassets in Resources */,
+				75C3E77F21AA5E9800876EC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E78B21AA5E9800876EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E79621AA5E9900876EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75C3E77221AA5E9800876EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C3E7AF21AA630100876EC6 /* VerificationResultViewController.swift in Sources */,
+				75C3E7AD21AA62E900876EC6 /* CheckVerificationViewController.swift in Sources */,
+				75C3E7B621AA65C100876EC6 /* StartVerificationViewController.swift in Sources */,
+				75C3E78221AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodeld in Sources */,
+				75C3E7B421AA63A500876EC6 /* verifyAPI.swift in Sources */,
+				75C3E77C21AA5E9800876EC6 /* ViewController.swift in Sources */,
+				75C3E77A21AA5E9800876EC6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E78921AA5E9800876EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C3E79221AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATIONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C3E79421AA5E9900876EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C3E79D21AA5E9900876EC6 /* Twilio_App_SMS_VERIFICATIONUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75C3E78F21AA5E9800876EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C3E77521AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */;
+			targetProxy = 75C3E78E21AA5E9800876EC6 /* PBXContainerItemProxy */;
+		};
+		75C3E79A21AA5E9900876EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C3E77521AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION */;
+			targetProxy = 75C3E79921AA5E9900876EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75C3E77D21AA5E9800876EC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C3E77E21AA5E9800876EC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75C3E78521AA5E9800876EC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C3E78621AA5E9800876EC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75C3E79F21AA5E9900876EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75C3E7A021AA5E9900876EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75C3E7A221AA5E9900876EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATION/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATION";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75C3E7A321AA5E9900876EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATION/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATION";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75C3E7A521AA5E9900876EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATIONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATIONTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twilio_App_SMS_VERIFICATION.app/Twilio_App_SMS_VERIFICATION";
+			};
+			name = Debug;
+		};
+		75C3E7A621AA5E9900876EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATIONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATIONTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twilio_App_SMS_VERIFICATION.app/Twilio_App_SMS_VERIFICATION";
+			};
+			name = Release;
+		};
+		75C3E7A821AA5E9900876EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATIONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATIONUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Twilio_App_SMS_VERIFICATION;
+			};
+			name = Debug;
+		};
+		75C3E7A921AA5E9900876EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Twilio_App_SMS_VERIFICATIONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Project.Twilio-App-SMS-VERIFICATIONUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Twilio_App_SMS_VERIFICATION;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75C3E77121AA5E9800876EC6 /* Build configuration list for PBXProject "Twilio_App_SMS_VERIFICATION" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C3E79F21AA5E9900876EC6 /* Debug */,
+				75C3E7A021AA5E9900876EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C3E7A121AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATION" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C3E7A221AA5E9900876EC6 /* Debug */,
+				75C3E7A321AA5E9900876EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C3E7A421AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATIONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C3E7A521AA5E9900876EC6 /* Debug */,
+				75C3E7A621AA5E9900876EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C3E7A721AA5E9900876EC6 /* Build configuration list for PBXNativeTarget "Twilio_App_SMS_VERIFICATIONUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C3E7A821AA5E9900876EC6 /* Debug */,
+				75C3E7A921AA5E9900876EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75C3E78021AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75C3E78121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodel */,
+			);
+			currentVersion = 75C3E78121AA5E9800876EC6 /* Twilio_App_SMS_VERIFICATION.xcdatamodel */;
+			path = Twilio_App_SMS_VERIFICATION.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75C3E76E21AA5E9800876EC6 /* Project object */;
+}
